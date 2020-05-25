@@ -15,7 +15,7 @@ export default class Todo extends Component {
     }
 
     render() {
-        const list = this.PushSubscriptionOptions.entitries;
+        const list = this.props.entitries;
         const todo = list.map(createTodo());
         return (
             <div>
